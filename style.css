@@ -1,0 +1,96 @@
+#logo {
+    animation: colorchange 2s infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: blue;
+    }
+    25% {
+        color: white;
+    }
+    50% {
+        color: purple;
+    }
+    750% {
+        color: rgb(214, 214, 47);
+    }
+}
+
+#navbarNav a:hover {
+    color: white;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+#sm:hover {
+    font-size: 28px;
+    color: white;
+}
+
+#sm1:hover {
+    font-size: 28px;
+    color: rgba(0, 0, 255, 0.76);
+}
+
+#sm2:hover {
+    font-size: 28px;
+    color: rgba(29, 94, 235, 0.856);
+}
+
+#sm3:hover {
+    font-size: 28px;
+    color: rgba(252, 19, 19, 0.74);
+}
+
+#about h5 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#about h5:hover {
+    color: rgba(34, 37, 202, 0.856);
+    transition: .3s;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
+
+#about h5::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    background: rgba(128, 255, 0, 0.829);
+    height: 0%;
+    z-index: -1;
+    transition: all .4s;
+}
+
+#about h5:hover::before {
+    height: 60%;
+}
+
+#btn1:hover {
+    color: black;
+    background: white;
+}
+
+#follow a:hover {
+    background: rgba(46, 46, 228, 0.788);
+    border-radius: 55%;
+    transition: .5s;
+}
